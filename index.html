@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTLand - سرزمین مزه سالم | فروشگاه آنلاین محصولات ارگانیک و پروتئینی شمال ایران">
+    <title>HTLand | سرزمین مزه سالم - محصولات ارگانیک شمال ایران</title>
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E7D32">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="HTLand | سرزمین مزه سالم">
+    <meta property="og:description" content="محصولات ارگانیک و پروتئینی شمال ایران">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://htland.ir">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        /* Critical CSS در اینجا قرار می‌گیرد - برای بارگذاری سریع */
+        :root {
+            --primary-color: #2E7D32;
+            --primary-dark: #1B5E20;
+            --primary-light: #4CAF50;
+            --secondary-color: #FFB300;
+            --accent-color: #FF7043;
+            --text-primary: #1A237E;
+            --bg-primary: #F9FBE7;
+            --header-height: 80px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Vazirmatn', sans-serif; 
+            background: var(--bg-primary);
+            overflow-x: hidden;
+        }
+        
+        /* Loading Screen */
+        #loading {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: white;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <!-- Deferred CSS -->
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <a href="/" class="logo">
+                    <div class="logo-icon">HT</div>
+                    <div class="logo-text">
+                        <div class="logo-title">HTLand</div>
+                        <div class="logo-subtitle">سرزمین مزه سالم</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active"><i class="fas fa-home"></i> خانه</a>
+                    <a href="#products" class="nav-link"><i class="fas fa-shopping-bag"></i> محصولات</a>
+                    <a href="#categories" class="nav-link"><i class="fas fa-th-large"></i> دسته‌بندی</a>
+                    <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> درباره ما</a>
+                    <a href="#wallet" class="nav-link wallet-menu-btn"><i class="fas fa-wallet"></i> کیف پول</a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- User Actions -->
+                <div class="actions">
+                    <button class="action-btn theme-toggle" title="تغییر تم">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="action-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">0</span>
+                    </button>
+                    <button class="action-btn user-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Floating Menu (Apple Style) -->
+        <div class="floating-menu">
+            <div class="container">
+                <div class="floating-menu-inner">
+                    <div class="floating-item">
+                        <span>دسته‌بندی‌ها <i class="fas fa-chevron-down"></i></span>
+                        <div class="floating-submenu">
+                            <div class="submenu-column">
+                                <h4>محصولات اصلی</h4>
+                                <a href="#rice">برنج شمال</a>
+                                <a href="#caviar">خاویار ایرانی</a>
+                                <a href="#fish">ماهی تازه</a>
+                            </div>
+                            <div class="submenu-column">
+                                <h4>پروتئینی‌ها</h4>
+                                <a href="#chicken">مرغ محلی</a>
+                                <a href="#meat">گوشت ارگانیک</a>
+                                <a href="#egg">تخم مرغ محلی</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-item">
+                        <span>خدمات <i class="fas fa-chevron-down"></i></span>
+                        <div class="floating-submenu">
+                            <div class="submenu-column">
+                                <h4>خرید آسان</h4>
+                                <a href="#express">ارسال اکسپرس</a>
+                                <a href="#gift">هدیه بفرستید</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-item wallet-floating">
+                        <span>کیف پول <i class="fas fa-chevron-down"></i></span>
+                        <div class="floating-submenu wallet-submenu">
+                            <div class="wallet-info">
+                                <div class="wallet-balance">
+                                    <small>موجودی:</small>
+                                    <strong class="balance">۰ تومان</strong>
+                                </div>
+                                <div class="wallet-actions">
+                                    <button class="btn btn-sm charge-btn">شارژ</button>
+                                    <button class="btn btn-sm btn-outline history-btn">تاریخچه</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Particles -->
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-text">سرزمین مزه سالم</h1>
+                    <p class="hero-subtitle">محصولات ارگانیک شمال ایران را مستقیماً از مزارع به سفره خود بیاورید</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-number" data-count="5000">0</div>
+                            <div class="stat-label">مشتری راضی</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-number" data-count="200">0</div>
+                            <div class="stat-label">محصول طبیعی</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-number" data-count="10000">0</div>
+                            <div class="stat-label">سفارش موفق</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-shopping-bag"></i>
+                            مشاهده محصولات
+                        </a>
+                        <a href="#categories" class="btn btn-outline btn-lg" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-th-large"></i>
+                            دسته‌بندی‌ها
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Stats Bar -->
+        <div class="live-stats-bar">
+            <div class="container">
+                <div class="live-stats-inner">
+                    <div class="live-stat">
+                        <i class="fas fa-users"></i>
+                        <span><span class="live-count" id="live-users">243</span> نفر آنلاین</span>
+                    </div>
+                    <div class="live-stat">
+                        <i class="fas fa-bolt"></i>
+                        <span><span class="live-count" id="recent-sales">15</span> فروش در ۵ دقیقه گذشته</span>
+                    </div>
+                    <div class="live-stat">
+                        <i class="fas fa-truck"></i>
+                        <span><span class="live-count" id="active-orders">42</span> سفارش در حال ارسال</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <section class="section charts-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">آمارهای زنده</h2>
+                <div class="charts-grid">
+                    <div class="chart-card" data-aos="fade-right">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-users"></i> کاربران آنلاین</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="onlineUsersChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card" data-aos="fade-up">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-chart-line"></i> فروش‌های اخیر</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="recentSalesChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card" data-aos="fade-left">
+                        <div class="chart-header">
+                            <h3><i class="fas fa-truck"></i> سفارشات فعال</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="activeOrdersChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section id="categories" class="section categories">
+            <div class="container">
+                <h2 class="section-title">دسته‌بندی محصولات</h2>
+                <div class="categories-grid">
+                    <!-- Category items will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Smart Products -->
+        <section id="products" class="section products">
+            <div class="container">
+                <h2 class="section-title">محصولات ویژه</h2>
+                <div class="products-grid">
+                    <!-- Smart cards will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About HTLand -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">درباره HTLand</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <h3>سرزمین مزه سالم</h3>
+                        <p>HTLand مخفف <strong>Healthy Taste Land</strong> به معنای "سرزمین مزه سالم" است. ما باور داریم سلامت از سفره شما شروع می‌شود.</p>
+                        
+                        <div class="mission-cards">
+                            <div class="mission-card" data-aos="flip-left" data-aos-delay="100">
+                                <div class="mission-icon">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <h4>مأموریت ما</h4>
+                                <p>ارائه سالم‌ترین محصولات ارگانیک شمال ایران با حفظ کامل خواص طبیعی</p>
+                            </div>
+                            <div class="mission-card" data-aos="flip-left" data-aos-delay="200">
+                                <div class="mission-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4>چشم‌انداز</h4>
+                                <p>تبدیل شدن به مرجع برتر خرید محصولات ارگانیک در ایران</p>
+                            </div>
+                            <div class="mission-card" data-aos="flip-left" data-aos-delay="300">
+                                <div class="mission-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h4>ارزش‌ها</h4>
+                                <p>صداقت، کیفیت، حمایت از تولیدکنندگان محلی، رضایت مشتری</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             srcset="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80 400w,
+                                     https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w"
+                             sizes="(max-width: 600px) 400px, 800px"
+                             alt="محصولات ارگانیک" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">راه‌های ارتباطی</h2>
+                <div class="contact-grid">
+                    <div class="contact-card" data-aos="zoom-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>تلفن تماس</h3>
+                        <p class="contact-info">
+                            <a href="tel:+981133445566">۰۱۱-۳۳۴۴۵۵۶۶</a>
+                        </p>
+                        <p class="contact-note">پاسخگویی: ۸ صبح تا ۱۰ شب</p>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>آدرس</h3>
+                        <p class="contact-info">
+                            مازندران، ساری، بلوار طالقانی
+                        </p>
+                        <button class="btn btn-sm btn-outline map-btn">مشاهده نقشه</button>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>ایمیل</h3>
+                        <p class="contact-info">
+                            <a href="mailto:info@htland.ir">info@htland.ir</a>
+                        </p>
+                        <p class="contact-note">پاسخ سریع در ۲۴ ساعت</p>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>ساعت کاری</h3>
+                        <div class="working-hours">
+                            <div class="working-day">
+                                <span>شنبه - پنجشنبه</span>
+                                <span>۸:۰۰ - ۲۲:۰۰</span>
+                            </div>
+                            <div class="working-day">
+                                <span>جمعه</span>
+                                <span>۸:۰۰ - ۱۴:۰۰</span>
+                            </div>
+                            <div class="working-status">
+                                <span class="status-indicator open">هم‌اکنون باز است</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://instagram.com/htland.ir" class="social-link" target="_blank" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://t.me/htland_ir" class="social-link" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://wa.me/989123456789" class="social-link" target="_blank" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Info -->
+        <section class="section legal">
+            <div class="container">
+                <h3 class="legal-title">اطلاعات حقوقی</h3>
+                <div class="legal-grid">
+                    <div class="legal-item" data-aos="flip-up">
+                        <span class="legal-label">شناسه ملی</span>
+                        <span class="legal-value">14001234567</span>
+                    </div>
+                    <div class="legal-item" data-aos="flip-up" data-aos-delay="100">
+                        <span class="legal-label">شماره ثبت</span>
+                        <span class="legal-value">56789</span>
+                    </div>
+                    <div class="legal-item" data-aos="flip-up" data-aos-delay="200">
+                        <span class="legal-label">نماد اعتماد</span>
+                        <span class="legal-value">✅ در حال اخذ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login/Register Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">ورود / ثبت‌نام</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">ورود</button>
+                    <button class="auth-tab" data-tab="register">ثبت‌نام</button>
+                </div>
+                
+                <form class="auth-form active" id="loginForm">
+                    <div class="form-group">
+                        <label for="loginMobile">شماره موبایل</label>
+                        <input type="tel" id="loginMobile" class="form-control" placeholder="09123456789" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword">رمز عبور</label>
+                        <input type="password" id="loginPassword" class="form-control" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">ورود</button>
+                    
+                    <div class="auth-divider">
+                        <span>یا</span>
+                    </div>
+                    
+                    <button type="button" class="btn btn-google">
+                        <i class="fab fa-google"></i>
+                        ادامه با Google
+                    </button>
+                </form>
+                
+                <form class="auth-form" id="registerForm">
+                    <div class="form-group">
+                        <label for="registerMobile">شماره موبایل</label>
+                        <input type="tel" id="registerMobile" class="form-control" placeholder="09123456789" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerName">نام و نام خانوادگی</label>
+                        <input type="text" id="registerName" class="form-control" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">ثبت‌نام</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wallet Modal -->
+    <div class="modal" id="walletModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">کیف پول هوشمند</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="wallet-summary">
+                    <div class="wallet-balance-large">
+                        <small>موجودی شما</small>
+                        <div class="balance-amount">۰ <span>تومان</span></div>
+                    </div>
+                    
+                    <div class="wallet-quick-actions">
+                        <button class="wallet-action-btn charge-action">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>شارژ</span>
+                        </button>
+                        <button class="wallet-action-btn withdraw-action">
+                            <i class="fas fa-minus-circle"></i>
+                            <span>برداشت</span>
+                        </button>
+                        <button class="wallet-action-btn history-action">
+                            <i class="fas fa-history"></i>
+                            <span>تاریخچه</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="wallet-transactions">
+                    <h4>آخرین تراکنش‌ها</h4>
+                    <div class="transactions-list">
+                        <!-- Transactions will be loaded here -->
+                        <p class="empty-state">هیچ تراکنشی یافت نشد</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charge Wallet Modal -->
+    <div class="modal" id="chargeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">شارژ کیف پول</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="charge-options">
+                    <div class="form-group">
+                        <label>مبلغ شارژ (تومان)</label>
+                        <input type="number" class="form-control charge-amount" min="10000" value="100000">
+                    </div>
+                    
+                    <div class="quick-amounts">
+                        <button class="quick-amount" data-amount="50000">۵۰,۰۰۰</button>
+                        <button class="quick-amount" data-amount="100000">۱۰۰,۰۰۰</button>
+                        <button class="quick-amount" data-amount="200000">۲۰۰,۰۰۰</button>
+                        <button class="quick-amount" data-amount="500000">۵۰۰,۰۰۰</button>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h4>روش پرداخت</h4>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="zarinpal" checked>
+                                <span class="payment-icon">زرین‌پال</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="wallet">
+                                <span class="payment-icon">کیف پول</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block charge-submit">پرداخت و شارژ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Two-Factor Authentication Modal -->
+    <div class="modal" id="twoFAModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">تأیید دو مرحله‌ای</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="twofa-methods">
+                    <div class="method-card" data-method="sms">
+                        <i class="fas fa-sms"></i>
+                        <span>ارسال کد به پیامک</span>
+                    </div>
+                    <div class="method-card" data-method="email">
+                        <i class="fas fa-envelope"></i>
+                        <span>ارسال کد به ایمیل</span>
+                    </div>
+                    <div class="method-card" data-method="authenticator">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>اپلیکیشن Authenticator</span>
+                    </div>
+                </div>
+                <div class="otp-input">
+                    <input type="text" maxlength="6" placeholder="_ _ _ _ _ _">
+                    <div class="otp-timer">
+                        <span>زمان باقی‌مانده: <span class="countdown">120</span> ثانیه</span>
+                        <button class="resend-btn">ارسال مجدد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions Floating Buttons -->
+    <div class="quick-actions-fixed">
+        <button class="quick-action-btn scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <button class="quick-action-btn chat-btn">
+            <i class="fas fa-comment"></i>
+        </button>
+        <button class="quick-action-btn theme-toggle-btn">
+            <i class="fas fa-palette"></i>
+        </button>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">HT</div>
+                        <div class="logo-text">
+                            <div class="logo-title">HTLand</div>
+                            <div class="logo-subtitle">سرزمین مزه سالم</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        ارائه سالم‌ترین و باکیفیت‌ترین محصولات ارگانیک شمال ایران
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">دسته‌بندی‌ها</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rice">برنج شمال</a></li>
+                        <li><a href="#caviar">خاویار ایرانی</a></li>
+                        <li><a href="#fish">ماهی تازه</a></li>
+                        <li><a href="#honey">عسل طبیعی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">خدمات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">سوالات متداول</a></li>
+                        <li><a href="#shipping">شرایط ارسال</a></li>
+                        <li><a href="#return">بازگرداندن کالا</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">اطلاعات تماس</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> ۰۱۱-۳۳۴۴۵۵۶۶</p>
+                        <p><i class="fas fa-envelope"></i> info@htland.ir</p>
+                        <p><i class="fas fa-map-marker-alt"></i> ساری، مازندران</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© ۱۴۰۴ تمامی حقوق برای HTLand محفوظ است.</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">حریم خصوصی</a>
+                    <a href="#terms">قوانین و مقررات</a>
+                    <a href="#sitemap">نقشه سایت</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

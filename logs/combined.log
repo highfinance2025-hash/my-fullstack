@@ -1,0 +1,28 @@
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-13 16:22:01"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-13 16:22:01"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-13 17:06:28"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-13 17:06:28"}
+{"level":"error","message":"❌ MongoDB Connection Error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-02-13 17:54:17"}
+{"level":"error","message":"❌ MongoDB Connection Error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-02-13 17:54:17"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-13 17:59:43"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-13 17:59:43"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-13 17:59:43"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 09:35:28"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-14 12:14:21"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-14 12:14:21"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 12:14:23"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 12:14:23"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-14 12:14:23"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-14 12:14:23"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-14 13:08:38"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-14 13:08:38"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 13:08:40"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 13:08:40"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-14 13:08:40"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-14 13:08:40"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-14 13:09:01"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-14 13:09:02"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 13:09:03"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-14 13:09:03"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-14 13:09:03"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 13:09:04"}

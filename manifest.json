@@ -1,0 +1,73 @@
+{
+  "name": "HTLand - سرزمین مزه سالم",
+  "short_name": "HTLand",
+  "description": "فروشگاه آنلاین محصولات ارگانیک و پروتئینی شمال ایران",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9FBE7",
+  "theme_color": "#2E7D32",
+  "orientation": "portrait-primary",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/images/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "shopping", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "محصولات جدید",
+      "short_name": "جدید",
+      "description": "مشاهده جدیدترین محصولات",
+      "url": "/products?filter=new"
+    },
+    {
+      "name": "کیف پول",
+      "short_name": "کیف پول",
+      "description": "مدیریت کیف پول شما",
+      "url": "/wallet"
+    }
+  ],
+  "prefer_related_applications": false,
+  "scope": "/"
+}
