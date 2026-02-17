@@ -10,9 +10,14 @@ const { ErrorMiddleware, asyncHandler } = require('./middlewares/error.middlewar
 const { apiResponse } = require('./utils/api-response');
 
 // Import routes
+// Import routes
 const walletRoutes = require('./routes/wallet.routes');
 const authRoutes = require('./routes/auth.routes');
 const productRoutes = require('./routes/product.routes');
+const cartRoutes = require('./routes/cart.routes');
+const orderRoutes = require('./routes/order.routes');
+const addressRoutes = require('./routes/address.routes');
+const profileRoutes = require('./routes/profile.routes');
 
 class HTLandApp {
   constructor() {
@@ -105,9 +110,13 @@ class HTLandApp {
     // Authentication routes with stricter rate limiting
     const authLimiter = securityMiddleware.createAuthLimiter();
     
-    this.app.use('/api/v1/auth', authLimiter, authRoutes);
-    this.app.use('/api/v1/wallet', apiLimiter, walletRoutes);
-    this.app.use('/api/v1/products', apiLimiter, productRoutes);
+   this.app.use('/api/v1/auth', authLimiter, authRoutes);
+this.app.use('/api/v1/wallet', apiLimiter, walletRoutes);
+this.app.use('/api/v1/products', apiLimiter, productRoutes);
+this.app.use('/api/v1/cart', apiLimiter, cartRoutes);
+this.app.use('/api/v1/orders', apiLimiter, orderRoutes);
+this.app.use('/api/v1/address', apiLimiter, addressRoutes);
+this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
 
     // 📁 Static Files (Secure)
     if (this.config.file?.uploadPath) {
