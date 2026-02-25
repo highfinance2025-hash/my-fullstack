@@ -26,3 +26,242 @@
 {"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-14 13:09:03"}
 {"level":"info","message":"Environment: development","timestamp":"2026-02-14 13:09:03"}
 {"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-14 13:09:04"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 16:16:29"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 16:16:34"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 16:16:34"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 16:16:34"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 16:18:28"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 16:18:30"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 16:18:30"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 16:18:30"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 16:18:48"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 16:18:51"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 16:18:51"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 16:18:51"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 16:28:51"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 16:28:53"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 16:28:53"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 16:28:53"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 16:29:11"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 16:29:13"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 16:29:13"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 16:29:13"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 17:17:52"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 17:17:53"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 17:17:53"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 17:17:53"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 17:33:11"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 17:33:14"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 17:33:14"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 17:33:14"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 17:33:49"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 17:33:51"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 17:33:51"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 17:33:51"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 17:48:56"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-01.4ticbkh.mongodb.net","timestamp":"2026-02-19 17:49:02"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 17:49:02"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 17:49:02"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:20:51"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:20:53"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:20:53"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:20:53"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:34:09"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:34:11"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:34:11"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:34:11"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:35:33"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:35:35"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:35:35"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:35:35"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:39:43"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:39:46"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:39:46"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:39:46"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:45:18"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:45:20"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:45:20"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:45:20"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:46:12"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:46:14"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:52:16"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:52:17"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:52:20"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:52:20"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:52:20"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:52:20"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:52:41"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:52:41"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:52:45"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:52:45"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:52:45"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:52:45"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:54:10"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:54:11"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:54:11"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:54:11"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:54:16"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:54:17"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:54:17"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:54:17"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-19 18:54:53"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-19 18:54:54"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-19 18:54:54"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-19 18:54:54"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:05:55"}
+{"level":"error","message":"❌ MongoDB Connection Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:06:43"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:15:06"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:15:08"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:15:08"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:15:08"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:31:03"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:31:05"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:31:05"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:31:05"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:31:32"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:31:34"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:37:39"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:37:39"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:37:42"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:37:42"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:37:42"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:37:42"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:37:59"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:38:00"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:38:00"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:38:00"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:38:03"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:38:06"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:38:06"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:38:06"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:39:12"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:39:17"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:39:17"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:39:17"}
+{"level":"warn","message":"Warning: routes/index.js missing","timestamp":"2026-02-20 10:42:35"}
+{"level":"info","message":"✅ MongoDB Connected: ac-zeblze4-shard-00-00.4ticbkh.mongodb.net","timestamp":"2026-02-20 10:42:38"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-20 10:42:38"}
+{"level":"info","message":"Environment: development","timestamp":"2026-02-20 10:42:38"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 13:19:45"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 13:19:45"}
+{"ip":"::1","level":"info","message":"GET /","status":200,"timestamp":"2026-02-23 13:20:41"}
+{"ip":"::1","level":"info","message":"GET /favicon.ico","status":200,"timestamp":"2026-02-23 13:20:44"}
+{"ip":"::1","level":"info","message":"GET /health","status":200,"timestamp":"2026-02-23 13:24:02"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 13:25:03"}
+{"level":"error","message":"Error in checkRateLimit: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.","stack":"MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.\n    at Socket.<anonymous> (C:\\Users\\online4all\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n    at Object.onceWrapper (node:events:623:26)\n    at Socket.emit (node:events:508:28)\n    at TCP.<anonymous> (node:net:346:12)","timestamp":"2026-02-23 13:25:23"}
+{"level":"error","message":"Error in sendOTP: user.generateOTP is not a function","stack":"TypeError: user.generateOTP is not a function\n    at sendOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:66:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:25:23"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 13:27:08"}
+{"level":"error","message":"Error in verifyOTP: Cannot access 'validationResult' before initialization","stack":"ReferenceError: Cannot access 'validationResult' before initialization\n    at verifyOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:105:22)\n    at Layer.handle [as handle_request] (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at middleware (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:27:08"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 13:27:17"}
+{"level":"error","message":"Error in verifyOTP: Cannot access 'validationResult' before initialization","stack":"ReferenceError: Cannot access 'validationResult' before initialization\n    at verifyOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:105:22)\n    at Layer.handle [as handle_request] (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at middleware (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:27:17"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 13:27:18"}
+{"level":"error","message":"Error in verifyOTP: Cannot access 'validationResult' before initialization","stack":"ReferenceError: Cannot access 'validationResult' before initialization\n    at verifyOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:105:22)\n    at Layer.handle [as handle_request] (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at middleware (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:27:18"}
+{"ip":"::1","level":"info","message":"GET /api/v1/products","status":200,"timestamp":"2026-02-23 13:28:01"}
+{"filter":{"active":true},"level":"info","limit":12,"message":"تعداد 0 محصول دریافت شد","page":1,"timestamp":"2026-02-23 13:28:01"}
+{"ip":"::1","level":"info","message":"POST /api/v1/products","status":200,"timestamp":"2026-02-23 13:29:21"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 13:38:10"}
+{"level":"error","message":"Error in checkRateLimit: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.","stack":"MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.\n    at Socket.<anonymous> (C:\\Users\\online4all\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n    at Object.onceWrapper (node:events:623:26)\n    at Socket.emit (node:events:508:28)\n    at TCP.<anonymous> (node:net:346:12)","timestamp":"2026-02-23 13:38:46"}
+{"level":"error","message":"Error in sendOTP: user.generateOTP is not a function","stack":"TypeError: user.generateOTP is not a function\n    at sendOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:66:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:38:46"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 13:52:09"}
+{"level":"error","message":"Error in checkRateLimit: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.","stack":"MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.\n    at Socket.<anonymous> (C:\\Users\\online4all\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n    at Object.onceWrapper (node:events:623:26)\n    at Socket.emit (node:events:508:28)\n    at TCP.<anonymous> (node:net:346:12)","timestamp":"2026-02-23 13:52:51"}
+{"level":"error","message":"Error in sendOTP: user.generateOTP is not a function","stack":"TypeError: user.generateOTP is not a function\n    at sendOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:66:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:52:51"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 13:57:00"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 13:57:00"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 13:57:02"}
+{"level":"error","message":"Error in checkRateLimit: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.","stack":"MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.\n    at Socket.<anonymous> (C:\\Users\\online4all\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n    at Object.onceWrapper (node:events:623:26)\n    at Socket.emit (node:events:508:28)\n    at TCP.<anonymous> (node:net:346:12)","timestamp":"2026-02-23 13:57:09"}
+{"level":"error","message":"Error in sendOTP: user.generateOTP is not a function","stack":"TypeError: user.generateOTP is not a function\n    at sendOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:66:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 13:57:09"}
+{"errorCode":"INTERNAL_ERROR","ip":"::1","level":"error","message":"Server Error: user.generateOTP is not a function","method":"POST","path":"/api/v1/auth/send-otp","requestId":"mlz18b5ikay2ne5c0ce","stack":"Error: user.generateOTP is not a function\n    at ErrorBuilder.fromUnknown (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\utils\\error-builder.js:103:12)\n    at errorHandler (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\middlewares\\error.middleware.js:34:30)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:67:12)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9","statusCode":500,"timestamp":"2026-02-23 13:57:09"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 14:02:34"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 14:02:34"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:02:44"}
+{"level":"error","message":"Error in checkRateLimit: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.","stack":"MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to \"maxRetriesPerRequest\" option for details.\n    at Socket.<anonymous> (C:\\Users\\online4all\\node_modules\\ioredis\\built\\redis\\event_handler.js:207:37)\n    at Object.onceWrapper (node:events:623:26)\n    at Socket.emit (node:events:508:28)\n    at TCP.<anonymous> (node:net:346:12)","timestamp":"2026-02-23 14:03:15"}
+{"level":"info","message":"[DEV] OTP for 09119113074: 537333","timestamp":"2026-02-23 14:03:16"}
+{"isNewUser":true,"level":"info","message":"OTP sent to 09119113074","otpCode":"537333","phone":"09119113074","timestamp":"2026-02-23 14:03:16"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:05:15"}
+{"level":"error","message":"Error in verifyOTP: Cannot access 'validationResult' before initialization","stack":"ReferenceError: Cannot access 'validationResult' before initialization\n    at verifyOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:105:22)\n    at Layer.handle [as handle_request] (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at middleware (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 14:05:15"}
+{"errorCode":"INTERNAL_ERROR","ip":"::1","level":"error","message":"Server Error: Cannot access 'validationResult' before initialization","method":"POST","path":"/api/v1/auth/verify-otp","requestId":"mlz1iv9lp8gfrsn05b","stack":"Error: Cannot access 'validationResult' before initialization\n    at ErrorBuilder.fromUnknown (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\utils\\error-builder.js:103:12)\n    at errorHandler (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\middlewares\\error.middleware.js:34:30)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:67:12)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9","statusCode":500,"timestamp":"2026-02-23 14:05:15"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:06:14"}
+{"level":"error","message":"Error in verifyOTP: Cannot access 'validationResult' before initialization","stack":"ReferenceError: Cannot access 'validationResult' before initialization\n    at verifyOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:105:22)\n    at Layer.handle [as handle_request] (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at middleware (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 14:06:14"}
+{"errorCode":"INTERNAL_ERROR","ip":"::1","level":"error","message":"Server Error: Cannot access 'validationResult' before initialization","method":"POST","path":"/api/v1/auth/verify-otp","requestId":"mlz1k4n4mz81huts1g","stack":"Error: Cannot access 'validationResult' before initialization\n    at ErrorBuilder.fromUnknown (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\utils\\error-builder.js:103:12)\n    at errorHandler (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\middlewares\\error.middleware.js:34:30)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:67:12)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9","statusCode":500,"timestamp":"2026-02-23 14:06:14"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:06:19"}
+{"level":"error","message":"Error in verifyOTP: Cannot access 'validationResult' before initialization","stack":"ReferenceError: Cannot access 'validationResult' before initialization\n    at verifyOTP (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\controllers\\auth.controller.js:105:22)\n    at Layer.handle [as handle_request] (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at middleware (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-23 14:06:19"}
+{"errorCode":"INTERNAL_ERROR","ip":"::1","level":"error","message":"Server Error: Cannot access 'validationResult' before initialization","method":"POST","path":"/api/v1/auth/verify-otp","requestId":"mlz1k948h2pp0yxdz6h","stack":"Error: Cannot access 'validationResult' before initialization\n    at ErrorBuilder.fromUnknown (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\utils\\error-builder.js:103:12)\n    at errorHandler (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\src\\middlewares\\error.middleware.js:34:30)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle_error (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\layer.js:67:12)\n    at trim_prefix (C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at C:\\Users\\online4all\\Desktop\\htland2 - production ready\\node_modules\\express\\lib\\router\\index.js:286:9","statusCode":500,"timestamp":"2026-02-23 14:06:19"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 14:13:58"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 14:13:58"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:14:03"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:15:45"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:17:01"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:18:05"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:19:19"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:19:52"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:20:22"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:21:05"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:21:25"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:21:41"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:31:03"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:32:44"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:33:11"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:33:46"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:34:45"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:38:06"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 14:39:08"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:40:48"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:41:06"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 14:41:26"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 15:05:03"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 15:06:41"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 15:08:03"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 15:08:32"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 15:09:34"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 15:22:20"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 15:22:37"}
+{"errorCode":"INVALID_JSON","ip":"::1","level":"warn","message":"Client Error:","method":"POST","path":"/api/v1/auth/send-otp","statusCode":400,"timestamp":"2026-02-23 15:22:37"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 15:23:16"}
+{"errorCode":"INVALID_JSON","ip":"::1","level":"warn","message":"Client Error:","method":"POST","path":"/api/v1/auth/verify-otp","statusCode":400,"timestamp":"2026-02-23 15:23:16"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 15:25:48"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 15:26:34"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 15:33:58"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 15:39:35"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 15:41:27"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 15:52:35"}
+{"errorCode":"NOT_FOUND","ip":"::1","level":"warn","message":"Client Error:","method":"POST","path":"/api/v1/auth/profile","requestId":"mlz5cwv8otqqq7x3oj","statusCode":404,"timestamp":"2026-02-23 15:52:35"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 15:56:08"}
+{"errorCode":"NOT_FOUND","ip":"::1","level":"warn","message":"Client Error:","method":"POST","path":"/api/v1/auth/profile","requestId":"mlz5hh747bjzwybiw0m","statusCode":404,"timestamp":"2026-02-23 15:56:08"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 16:04:32"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 16:04:32"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/test-me","status":200,"timestamp":"2026-02-23 16:04:38"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 16:06:24"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 16:07:43"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 16:56:29"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:04:26"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 17:10:45"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 17:10:45"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:10:54"}
+{"errorCode":"INVALID_TOKEN_TYPE","ip":"::1","level":"warn","message":"Client Error:","method":"GET","path":"/api/v1/auth/profile","requestId":"mlz85mcxkiei4azah3","statusCode":401,"timestamp":"2026-02-23 17:10:54"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 17:14:27"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 17:14:27"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-23 17:18:50"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-23 17:19:45"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:21:58"}
+{"ip":"::1","level":"info","message":"User authenticated","roles":"any","timestamp":"2026-02-23 17:21:58","userId":"699c2cebe3c54d023abd8ba8"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:22:27"}
+{"errorCode":"INVALID_TOKEN","ip":"::1","level":"warn","message":"Client Error:","method":"GET","path":"/api/v1/auth/profile","requestId":"mlz8kgpcxiw8s75zfm","statusCode":401,"timestamp":"2026-02-23 17:22:27"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:22:58"}
+{"ip":"::1","level":"info","message":"User authenticated","roles":"any","timestamp":"2026-02-23 17:22:58","userId":"699c2cebe3c54d023abd8ba8"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:24:26"}
+{"ip":"::1","level":"info","message":"User authenticated","roles":"any","timestamp":"2026-02-23 17:24:26","userId":"699c2cebe3c54d023abd8ba8"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-23 17:29:44"}
+{"errorCode":"INVALID_TOKEN","ip":"::1","level":"warn","message":"Client Error:","method":"GET","path":"/api/v1/auth/profile","requestId":"mlz8tu4w6fjjqokmvvs","statusCode":401,"timestamp":"2026-02-23 17:29:44"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-23 20:14:42"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-23 20:14:42"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-24 11:00:22"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-24 11:00:22"}
+{"level":"info","message":"✅ MongoDB Connected","timestamp":"2026-02-24 11:09:40"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2026-02-24 11:09:40"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/send-otp","status":200,"timestamp":"2026-02-24 11:17:31"}
+{"ip":"::1","level":"info","message":"POST /api/v1/auth/verify-otp","status":200,"timestamp":"2026-02-24 11:18:29"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-24 11:21:04"}
+{"ip":"::1","level":"info","message":"User authenticated","roles":"any","timestamp":"2026-02-24 11:21:04","userId":"699c2cebe3c54d023abd8ba8"}
+{"ip":"::1","level":"info","message":"GET /api/v1/auth/profile","status":200,"timestamp":"2026-02-24 11:21:21"}
+{"ip":"::1","level":"info","message":"User authenticated","roles":"any","timestamp":"2026-02-24 11:21:21","userId":"699c2cebe3c54d023abd8ba8"}
+{"level":"warn","message":"Received SIGINT, shutting down gracefully...","timestamp":"2026-02-24 12:51:36"}

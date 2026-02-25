@@ -1,23 +1,23 @@
-// src/app.js - Single Source of Truth (نسخه نهایی)
 const express = require('express');
 const path = require('path');
 const config = require('./config/env.config');
 const logger = require('./utils/logger');
 
+// ✅ اضافه کردن Swagger
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./config/swagger.config');
+
 // Middleware imports
 const securityMiddleware = require('./middlewares/security.middleware');
-const { ErrorMiddleware, asyncHandler } = require('./middlewares/error.middleware');
+const { ErrorMiddleware } = require('./middlewares/error.middleware');
 const { apiResponse } = require('./utils/api-response');
 
-// Import routes
 // Import routes
 const walletRoutes = require('./routes/wallet.routes');
 const authRoutes = require('./routes/auth.routes');
 const productRoutes = require('./routes/product.routes');
-const cartRoutes = require('./routes/cart.routes');
-const orderRoutes = require('./routes/order.routes');
-const addressRoutes = require('./routes/address.routes');
-const profileRoutes = require('./routes/profile.routes');
+// ✅ اضافه کردن index routes
+const indexRoutes = require('./routes/index');
 
 class HTLandApp {
   constructor() {
@@ -27,6 +27,7 @@ class HTLandApp {
     
     this.initializeMiddlewares();
     this.initializeRoutes();
+    this.initializeFrontendServing(); // ✅ اضافه شده برای سرو فایل‌های ریشه
     this.initializeErrorHandling();
     this.setupGracefulShutdown();
   }
@@ -44,13 +45,13 @@ class HTLandApp {
     
     // 🔄 Request Processing
     this.app.use(express.json({ 
-      limit: this.config.file.maxSize || '10mb',
+      limit: this.config?.file?.maxSize || '20mb',
       verify: this.rawBodyMiddleware()
     }));
     
     this.app.use(express.urlencoded({ 
       extended: true, 
-      limit: this.config.file.maxSize || '10mb' 
+     limit: this.config?.file?.maxSize || '20mb',
     }));
     
     // ✅ API Response Formatter
@@ -70,7 +71,6 @@ class HTLandApp {
       if (buf && buf.length) {
         req.rawBody = buf.toString();
         
-        // 🔐 Verify JSON is valid (security against malformed JSON attacks)
         try {
           if (req.is('application/json')) {
             JSON.parse(buf.toString());
@@ -89,6 +89,9 @@ class HTLandApp {
       res.api.success(health, 'Service is healthy');
     });
 
+    // ✅ Index Route - خوش آمدگویی
+    this.app.use('/', indexRoutes);
+
     // 📚 API Documentation (Public)
     this.app.get('/api/docs', (req, res) => {
       res.api.success({
@@ -101,6 +104,12 @@ class HTLandApp {
       });
     });
 
+    // ✅ Swagger Documentation (فقط در محیط توسعه)
+    if (this.config.env !== 'production') {
+      this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+      console.log('📚 Swagger docs available at /api-docs');
+    }
+
     // 🛡️ Protected Routes (with rate limiting per endpoint)
     const apiLimiter = securityMiddleware.apiRateLimiter({
       windowMs: 15 * 60 * 1000,
@@ -110,21 +119,33 @@ class HTLandApp {
     // Authentication routes with stricter rate limiting
     const authLimiter = securityMiddleware.createAuthLimiter();
     
-   this.app.use('/api/v1/auth', authLimiter, authRoutes);
-this.app.use('/api/v1/wallet', apiLimiter, walletRoutes);
-this.app.use('/api/v1/products', apiLimiter, productRoutes);
-this.app.use('/api/v1/cart', apiLimiter, cartRoutes);
-this.app.use('/api/v1/orders', apiLimiter, orderRoutes);
-this.app.use('/api/v1/address', apiLimiter, addressRoutes);
-this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
+    this.app.use('/api/v1/auth', authLimiter, authRoutes);
+    this.app.use('/api/v1/wallet', apiLimiter, walletRoutes);
+    this.app.use('/api/v1/products', apiLimiter, productRoutes);
 
-    // 📁 Static Files (Secure)
+    // 📁 Static Files (Secure) - فایل‌های آپلود شده کاربران
     if (this.config.file?.uploadPath) {
       this.app.use('/uploads', express.static(
         path.resolve(this.config.file.uploadPath), 
         this.getStaticFileOptions()
       ));
     }
+  }
+
+  // ✅ متد جدید: سرو کردن فایل‌های فرانت‌اند (index.html, css, js)
+  initializeFrontendServing() {
+    // مسیر ریشه پروژه (خروج از پوشه src)
+    const rootPath = path.resolve(__dirname, '..');
+
+    // سرو کردن پوشه‌های استاتیک موجود در ریشه پروژه
+    this.app.use('/css', express.static(path.join(rootPath, 'css')));
+    this.app.use('/js', express.static(path.join(rootPath, 'js')));
+    this.app.use('/images', express.static(path.join(rootPath, 'images')));
+
+    // سرو کردن فایل index.html اصلی
+    this.app.get('/', (req, res) => {
+      res.sendFile(path.join(rootPath, 'index.html'));
+    });
   }
 
   getApiEndpoints() {
@@ -155,29 +176,24 @@ this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
     return {
       maxAge: this.config.env === 'production' ? '365d' : '1h',
       setHeaders: (res, filePath) => {
-        // 🔒 Security headers for static files
         res.setHeader('X-Content-Type-Options', 'nosniff');
         res.setHeader('X-Frame-Options', 'DENY');
-        res.setHeader('X-Content-Type-Options', 'nosniff');
         
-        // 🚫 Prevent execution of uploaded files
         const executableRegex = /\.(php|exe|sh|bat|cmd|ps1|js|html)$/i;
         if (executableRegex.test(filePath)) {
           res.setHeader('Content-Type', 'text/plain');
           res.setHeader('Content-Disposition', 'inline');
         }
         
-        // 🏷️ Cache control
         const imageRegex = /\.(jpg|jpeg|png|gif|webp|svg)$/i;
         if (imageRegex.test(filePath)) {
           res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
         }
         
-        // 🔐 Prevent directory listing
         res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
       }
     };
-  }
+  } 
 
   async healthCheck() {
     const checks = {
@@ -202,36 +218,23 @@ this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
     };
 
     try {
-      // 🗄️ Database health check
       const database = require('./config/database.config');
       const dbHealth = await database.healthCheck();
       checks.database = dbHealth;
 
-      // 🔄 Redis health check (if configured)
       if (this.config.redis?.url) {
         const redis = require('./config/redis.config');
         const redisHealth = await redis.healthCheck();
         checks.redis = redisHealth;
       }
 
-      // 💳 Payment gateway health check
       if (this.config.payment?.zarinpal?.merchantId) {
         const zarinpalConfig = require('./config/zarinpal.config');
         const paymentHealth = await zarinpalConfig.healthCheck();
         checks.payment = paymentHealth;
       }
 
-      // 💽 Disk space check
-      const checkDiskSpace = require('check-disk-space').default;
-      const diskSpace = await checkDiskSpace(__dirname);
-      checks.disk = {
-        free: Math.round(diskSpace.free / 1024 / 1024 / 1024),
-        total: Math.round(diskSpace.size / 1024 / 1024 / 1024),
-        path: diskSpace.diskPath
-      };
-
-      // ✅ Determine overall status
-      const criticalServices = [dbHealth.status];
+      const criticalServices = [checks.database.status];
       if (checks.redis.status) criticalServices.push(checks.redis.status);
       
       const allHealthy = criticalServices.every(s => s === 'healthy');
@@ -247,10 +250,7 @@ this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
   }
 
   initializeErrorHandling() {
-    // 404 Handler
     this.app.use(ErrorMiddleware.notFoundHandler);
-    
-    // Global Error Handler (MUST be last)
     this.app.use(ErrorMiddleware.errorHandler);
   }
 
@@ -258,7 +258,6 @@ this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
     const shutdown = async (signal) => {
       this.logger.warn(`Received ${signal}, shutting down gracefully...`);
       
-      // Wait for existing connections to close
       setTimeout(() => {
         this.logger.info('Graceful shutdown complete');
         process.exit(0);
@@ -274,5 +273,4 @@ this.app.use('/api/v1/profile', apiLimiter, profileRoutes);
   }
 }
 
-// Singleton export
 module.exports = new HTLandApp().getApp();

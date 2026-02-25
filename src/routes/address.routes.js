@@ -310,7 +310,7 @@ router.post('/:id/validate-for-order', checkAddressOwnership, addressController.
  *           example: "بلوار طالقانی، برج پاسارگاد، طبقه ۴"
  *         postalCode:
  *           type: string
- *           pattern: "^\d{10}$"
+ *           pattern: "^\\d{10}$"
  *           example: "4816653157"
  *         isDefault:
  *           type: boolean

@@ -305,7 +305,7 @@ router.put('/toggle-active', profileController.toggleAccountActive);
  *           enum: [male, female, other]
  *         nationalCode:
  *           type: string
- *           pattern: "^\d{10}$"
+ *           pattern: "^\\d{10}$"
  *           example: "1234567890"
  *         language:
  *           type: string

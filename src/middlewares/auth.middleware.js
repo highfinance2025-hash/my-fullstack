@@ -1,4 +1,4 @@
-// src/middlewares/auth.middleware.js - Production Ready (نسخه نهایی)
+// src/middlewares/auth.middleware.js - Production Ready (نسخه نهایی اصلاح شده)
 const jwt = require('jsonwebtoken');
 const config = require('../config/env.config');
 const logger = require('../utils/logger');
@@ -42,7 +42,8 @@ class AuthMiddleware {
         }
 
         // 7. Check if token is in active sessions
-        if (user.sessions) {
+        // Note: Sessions are optional, only check if they exist
+        if (user.sessions && user.sessions.length > 0) {
           const activeSession = user.sessions.find(
             session => session.token === token && 
             session.isActive && 
@@ -100,9 +101,12 @@ class AuthMiddleware {
     return req.cookies?.accessToken || req.query?.token;
   }
 
+  // ✅ تابع صحیح و واحد verifyToken
   static async verifyToken(token) {
     return new Promise((resolve, reject) => {
-      jwt.verify(token, config.jwt.secret, (err, decoded) => {
+      const secret = process.env.JWT_SECRET || 'htland-secret-key';
+      
+      jwt.verify(token, secret, (err, decoded) => {
         if (err) {
           if (err.name === 'TokenExpiredError') {
             reject(new AppError('توکن منقضی شده', 401, 'TOKEN_EXPIRED'));
@@ -139,8 +143,8 @@ class AuthMiddleware {
     const rateLimit = require('express-rate-limit');
     
     return rateLimit({
-      windowMs: 15 * 60 * 1000, // 15 minutes
-      max: 5, // 5 attempts
+      windowMs: 15 * 60 * 1000,
+      max: 5,
       message: {
         success: false,
         error: 'تعداد تلاش‌های ناموفق بیش از حد مجاز',
@@ -148,7 +152,6 @@ class AuthMiddleware {
       },
       skipSuccessfulRequests: true,
       keyGenerator: (req) => {
-        // Use IP + username for rate limiting
         const username = req.body.email || req.body.phone || req.body.username || 'unknown';
         return `${req.ip}_${username}`;
       },
@@ -220,18 +223,15 @@ class AuthMiddleware {
 
   // 🔒 XSS Protection middleware
   static xssProtection(req, res, next) {
-    // Security headers
     res.setHeader('X-XSS-Protection', '1; mode=block');
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('X-Frame-Options', 'DENY');
     
-    // Sanitize inputs
     const sanitize = (obj) => {
       if (!obj || typeof obj !== 'object') return obj;
       
       Object.keys(obj).forEach(key => {
         if (typeof obj[key] === 'string') {
-          // Remove dangerous HTML tags
           obj[key] = obj[key]
             .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
             .replace(/<[^>]*>/g, '')
@@ -251,6 +251,11 @@ class AuthMiddleware {
     
     next();
   }
+
+  static authorize(roles = []) {
+    return this.authenticate(roles);
+  }
+  
 }
 
 module.exports = AuthMiddleware;

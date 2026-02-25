@@ -1,138 +1,53 @@
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
-const compression = require('compression');
-const rateLimit = require('express-rate-limit');
-const morgan = require('morgan');
-const path = require('path');
-const mongoose = require('mongoose'); // اضافه شده برای اتصال به دیتابیس
+const mongoose = require('mongoose');
 const config = require('./config/env.config');
 const logger = require('./utils/logger');
 
-// ساده‌سازی مدیریت خطا برای جلوگیری از ارورهای احتمالی
-const notFoundHandler = (req, res, next) => {
-  res.status(404).json({ status: 'error', message: 'Not Found' });
-};
-const errorHandler = (err, req, res, next) => {
-  logger.error(err.message);
-  res.status(500).json({ status: 'error', message: 'Internal Server Error' });
-};
-
-const app = express();
-
-// ========================
-// SECURITY MIDDLEWARES
-// ========================
-
-app.use(helmet({
-  contentSecurityPolicy: false, // برای راحتی توسعه غیرفعال شده
-  hsts: { maxAge: 31536000, includeSubDomains: true, preload: true }
-}));
-
-// CORS Configuration
-const corsOptions = {
-  origin: config.cors.allowedOrigins || '*',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
-};
-
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
-
-// Rate Limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: config.rateLimit?.maxRequests || 100,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: { status: 'error', message: 'Too many requests' }
-});
-
-app.use('/api/', limiter);
-
-// ========================
-// BASIC MIDDLEWARES
-// ========================
-
-app.use(compression({ threshold: 1024 }));
-if (config.env !== 'test') {
-  app.use(morgan(config.env === 'production' ? 'combined' : 'dev'));
-}
-
-// Request ID
-app.use((req, res, next) => {
-  req.id = Date.now().toString(36) + Math.random().toString(36).substr(2);
-  res.setHeader('X-Request-ID', req.id);
-  next();
-});
-
-// Body Parsing
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-
-// ========================
-// ROUTES
-// ========================
-
-// Health Check
-app.get('/health', (req, res) => {
-  const dbState = mongoose.connection.readyState;
-  // 0 = disconnected, 1 = connected, 2 = connecting, 3 = disconnecting
-  res.json({
-    status: dbState === 1 ? 'healthy' : 'degraded',
-    timestamp: new Date().toISOString(),
-    uptime: process.uptime(),
-    database: dbState === 1 ? 'connected' : 'disconnected',
-    service: config.app.name
-  });
-});
-
-// Mount API Routes
-try {
-  const apiRouter = require('./routes');
-  app.use('/api/v1', apiRouter);
-} catch (e) {
-  logger.warn('Warning: routes/index.js missing');
-  app.use('/api/v1', (req, res) => res.json({ message: 'API V1 Root - Routes missing' }));
-}
-
-// Static Files
-if (config.file?.uploadPath) {
-  app.use('/uploads', express.static(path.resolve(config.file.uploadPath)));
-}
-
-// Error Handlers
-app.use(notFoundHandler);
-app.use(errorHandler);
-
-// ========================
-// DATABASE CONNECTION & START SERVER
-// ========================
+// ✅ ایمپورت اپلیکیشن کانفیگ شده از فایل app.js
+const app = require('./app');
 
 const startServer = async () => {
   try {
-    // اتصال به دیتابیس (MongoDB)
-    const conn = await mongoose.connect(config.mongoose.url, config.mongoose.options);
-    logger.info(`✅ MongoDB Connected: ${conn.connection.host}`);
+    // 1️⃣ اتصال به دیتابیس (الزامی برای پروژه واقعی)
+    // اگر دیتابیس وصل نشود، به خطای catch می‌رود و پیام می‌دهد
+    await mongoose.connect(config.mongoose.url, config.mongoose.options);
+    
+    // لاگ کردن موفقیت اتصال
+    console.log('✅ MongoDB Connected Successfully');
+    logger.info('✅ MongoDB Connected');
 
-    // روشن کردن سرور
+    // 2️⃣ روشن کردن سرور
     const PORT = config.port || 3000;
+    
     app.listen(PORT, () => {
-      logger.info(`🚀 Server running on port ${PORT}`);
-      logger.info(`Environment: ${config.env}`);
-      console.log(`------------------------------------------------`);
+      console.log('------------------------------------------------');
       console.log(`🚀 Server is live at http://localhost:${PORT}`);
-      console.log(`------------------------------------------------`);
+      console.log('------------------------------------------------');
+      logger.info(`🚀 Server running on port ${PORT}`);
     });
 
   } catch (error) {
-    logger.error(`❌ MongoDB Connection Error: ${error.message}`);
-    console.error(`❌ Error: ${error.message}`);
-    process.exit(1);
+    // اگر خطایی در اتصال به دیتابیس یا استارتاپ رخ دهد
+    console.error('❌ CRITICAL ERROR:', error.message);
+    logger.error(`❌ Server startup failed: ${error.message}`);
+    process.exit(1); // بستن برنامه
   }
 };
 
-startServer();
+// ⚠️ نکته امنیتی برای ویندوز (جلوگیری از کرش کردن توسط کاراکترهای فارسی در لاگ)
+if (process.platform === 'win32') {
+  const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  rl.on('SIGINT', () => process.emit('SIGINT'));
+}
 
-module.exports = app;
+// هندل کردن خاموش شدن صحیح
+process.on('SIGINT', () => {
+  mongoose.connection.close(false).then(() => {
+    console.log('🔌 Server shut down gracefully');
+    process.exit(0);
+  });
+});
+
+startServer();

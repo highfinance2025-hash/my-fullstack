@@ -61,4 +61,15 @@ logger.stream = {
   }
 };
 
+// ✅ تابع middleware اضافه شده برای حل مشکل app.js
+logger.middleware = () => {
+  return (req, res, next) => {
+    logger.info(`${req.method} ${req.url}`, {
+      ip: req.ip,
+      status: res.statusCode
+    });
+    next();
+  };
+};
+
 module.exports = logger;

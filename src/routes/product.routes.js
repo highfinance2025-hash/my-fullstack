@@ -283,7 +283,7 @@ router.get('/:id', productController.getProductById);
 router.post('/:id/check-stock', productController.checkStock);
 
 // 🔐 Routes زیر فقط برای ادمین قابل دسترسی هستند
-router.use(authMiddleware.protect);
+router.use(authMiddleware.authenticate());
 
 /**
  * @swagger
@@ -334,7 +334,7 @@ router.use(authMiddleware.protect);
  */
 router.post(
   '/',
-  authMiddleware.restrictTo('admin'),
+  authMiddleware.authorize(['admin']),
   productMiddleware.uploadProductImages,
   productMiddleware.validateProduct,
   productController.createProduct
@@ -376,7 +376,7 @@ router.post(
  */
 router.put(
   '/:id',
-  authMiddleware.restrictTo('admin'),
+  authMiddleware.authorize(['admin']),
   productMiddleware.uploadProductImages,
   productMiddleware.validateProduct,
   productController.updateProduct
@@ -404,7 +404,7 @@ router.put(
  */
 router.delete(
   '/:id',
-  authMiddleware.restrictTo('admin'),
+  authMiddleware.authorize(['admin']),
   productController.deleteProduct
 );
 
@@ -437,7 +437,7 @@ router.delete(
  */
 router.post(
   '/:id/decrease-stock',
-  authMiddleware.restrictTo('admin', 'order-system'),
+  authMiddleware.authorize(['admin', 'order-system']),
   productController.decreaseStock
 );
 

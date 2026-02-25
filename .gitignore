@@ -1,0 +1,9 @@
+# چک کن .env در gitignore هست یا نه
+grep ".env" .gitignore
+
+# اگر نیست اضافه کن
+echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo ".env.development" >> .gitignore
+echo ".env.production" >> .gitignore
+echo ".env.test" >> .gitignore

@@ -1,0 +1,36 @@
+# Ignore everything by default
+*
+
+# Allow needed files
+!package.json
+!package-lock.json
+!server.js
+!config/
+!routes/
+!utils/
+!middlewares/
+!models/
+
+# Ignore sensitive/development files
+.env
+.env.local
+.env*.local
+.git/
+.gitignore
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+uploads/
+tests/
+coverage/
+.idea/
+.vscode/
+*.md
+Dockerfile*
+docker-compose*
+.dockerignore
+.gitlab-ci.yml
+.travis.yml
+jest.config.js
